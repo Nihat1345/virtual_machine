@@ -1,0 +1,15 @@
+#pragma once 
+#include "exenv.h"
+#include "reformat.h"
+void handle_pushb();
+void handle_pushw();
+void handle_pushd();
+void handle_pushq();
+void handle_pushf1();
+void handle_pushf2();
+void handle_popb();
+void handle_popw();
+void handle_popd();
+void handle_popq();
+void handle_popf1();
+void handle_popf2();
