@@ -1,8 +1,9 @@
 CFILES := $(wildcard src/*.c)
+SFILES := ${wildcard src/*.s}
 GCC := gcc
-CFLAGS := -Iinclude
+CFLAGS := -Iinclude -fdiagnostics-color=always
 run: $(CFILES)
-	$(GCC) $(CFLAGS) $(CFILES) -o vm
+	$(GCC) $(CFLAGS) $(CFILES) $(SFILES) -o vm
 
 
 	

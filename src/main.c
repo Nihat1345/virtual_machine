@@ -50,7 +50,7 @@ int main1(){
 }
 
 
-int main(int argc, char *argv[]){
+int main2(int argc, char *argv[]){
   struct Cmdline cl;
   DBG_MAIN0("1) establishing error log\n");
   DBG_MAIN0("2) invoking handle arguments\n");
